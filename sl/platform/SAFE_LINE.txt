@@ -1,0 +1,2 @@
+# player will not be shot by the doll if 
+# he/she is colliding with any abject named "SAFE_LINE"
