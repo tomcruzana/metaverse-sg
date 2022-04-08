@@ -1,0 +1,40 @@
+const playerTable = document.querySelector(".player-table");
+
+playerTable.addEventListener("click", (e) => {
+	e.preventDefault();
+	const id = e.target.id;
+	console.log("log: " + id);
+
+	if (e.target.tagName == "BUTTON" && e.target.className == "update-btn") {
+		// updateRecord(id, wins);
+		alert("update button " + id);
+	}
+	else if (e.target.tagName == "BUTTON" && e.target.className == "delete-btn") {
+		// deleteRecord(id);
+		alert("delete button " + id);
+	}
+});
+
+/*
+function updateRecord(id, wins) {
+	const xhttp = new XMLHttpRequest();
+	xhttp.onload = function() {
+		console.log("onload test");
+	};
+	xhttp.open("POST", "records?id=" + id + "&wins=");
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send();
+	location.reload();
+}
+
+function deleteRecord(id) {
+	const xhttp = new XMLHttpRequest();
+	xhttp.onload = function() {
+		console.log("onload test");
+	};
+	xhttp.open("DELETE", "records?id=" + id);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send();
+	location.reload();
+}
+*/

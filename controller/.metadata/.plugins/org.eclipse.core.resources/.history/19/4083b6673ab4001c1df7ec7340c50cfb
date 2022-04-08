@@ -1,0 +1,30 @@
+package com.sg.mv.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+public class HibernateUtil {
+
+    private static final SessionFactory sessionFactory = buildSessionFactory();
+
+    private static SessionFactory buildSessionFactory() {
+        try {
+        	// configures settings from hibernate.cfg.xml
+    		StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+    		return new MetadataSources(registry).buildMetadata().buildSessionFactory();
+    		
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("There was an error building the factory");
+        }
+    }
+
+    /** Provide access to the singleton sessionFactory so we create a public method.
+     *  This will provide the application with access to the singleton */
+    public static SessionFactory getSessionFactory(){
+        return sessionFactory;
+    }
+}

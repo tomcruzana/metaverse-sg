@@ -1,0 +1,61 @@
+package com.sg.mv.entity;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.AttributeOverrides;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.JoinColumn;
+
+@SuppressWarnings("serial")
+@Entity
+@Table(name = "avatar_player_info")
+public class AvatarPlayer implements Serializable{
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
+	@Column(name = "uuid")
+	private String uuid;
+	
+	@Column(name = "username")
+	private String name;
+	
+	private String displayname;
+	
+	private Integer wins;
+	
+	@Column(name="date_joined")
+	private String dateJoined;
+	
+	private String region;
+	
+	private String coordinates;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,39 @@
+package com.sg.mv.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sg.mv.dao.UserAdminDao;
+
+@SuppressWarnings("serial")
+@WebServlet("/adminlogin")
+public class LoginController extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String uname = req.getParameter("uname");
+		String upass = req.getParameter("upass");
+
+		UserAdminDao uad = new UserAdminDao();
+		int res = uad.find(uname, upass);
+
+		if (res == 1) {
+			// add session here
+			req.getRequestDispatcher("playerrecords.jsp").forward(req, resp);
+		} else {
+			// login failure
+			req.setAttribute("msg", "Invalid Login Process..<br>");
+			req.getRequestDispatcher("loginfail.jsp").forward(req, resp);
+		}
+	}
+}

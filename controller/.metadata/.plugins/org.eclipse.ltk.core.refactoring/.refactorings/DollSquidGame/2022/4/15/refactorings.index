@@ -1,0 +1,23 @@
+1649079365627	Copy compilation unit
+1649079538044	Delete element
+1649080263269	Delete element
+1649085614983	Rename package 'com.entity'
+1649085649092	Rename package 'com.util'
+1649087032416	Copy compilation unit
+1649087425261	Rename resource 'index.html'
+1649093576805	Rename compilation unit 'AbstractDao.java'
+1649094154792	Rename type 'User'
+1649094175259	Rename type 'Player'
+1649100340021	Extract local variable 'findOne'
+1649106355391	Extract local variable 'res'
+1649182013759	Delete element
+1649184713707	Copy file
+1649185773765	Extract local variable 'createQuery'
+1649189377114	Infer generic type arguments
+1649191721542	Copy compilation unit
+1649193043584	Delete elements
+1649196653203	Rename type 'RegistrationController'
+1649197167108	Rename type 'RecordsController'
+1649197181129	Copy compilation unit
+1649203470693	Delete element
+1649285368579	Extract local variable 'findByName'

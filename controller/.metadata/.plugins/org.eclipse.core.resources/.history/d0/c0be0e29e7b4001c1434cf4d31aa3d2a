@@ -1,0 +1,38 @@
+body {
+  background-color: #008080 !important;
+}
+
+table,
+th,
+tr,
+td {
+  margin-bottom: 2em;
+  padding: 3px;
+  background-color: #ffffff !important;
+  border: 1px solid #0f0f0f !important;
+}
+
+.field-row {
+  margin-bottom: 1em;
+  font-weight: bolder;
+}
+
+.div-title {
+  font-weight: bolder;
+}
+
+legend{
+  color: #fff;
+  background-color: #0f0f0f;
+}
+
+fieldset{
+  background-color: #D6D5D5;
+  width: 220px;
+}
+
+.red-txt{
+	margin-bottom: 5px;
+	background-color: #0f0f0f;
+	color: red;
+}

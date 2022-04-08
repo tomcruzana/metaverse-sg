@@ -1,0 +1,16 @@
+127.0.0.1 - - [04/Apr/2022:09:23:10 -0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:09:23:10 -0700] "GET /DollSquidGame/ HTTP/1.1" 200 152
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:09:23:28 -0700] "GET /DollSquidGame/adminlogin.html HTTP/1.1" 200 152
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:09:23:40 -0700] "GET /DollSquidGame/playerrecords HTTP/1.1" 200 -
+127.0.0.1 - - [04/Apr/2022:09:29:19 -0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:09:29:20 -0700] "GET /DollSquidGame/ HTTP/1.1" 304 -
+127.0.0.1 - - [04/Apr/2022:14:18:20 -0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:18:21 -0700] "GET /DollSquidGame/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:18:42 -0700] "GET /DollSquidGame/playerrecords HTTP/1.1" 404 782
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:18:42 -0700] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:18:55 -0700] "GET /DollSquidGame/adminlogin/playerrecords HTTP/1.1" 500 1561
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:19:03 -0700] "GET /DollSquidGame/adminlogin/playerrecords.jsp HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:19:32 -0700] "GET /DollSquidGame/adminlogin/playerrecords HTTP/1.1" 500 1561
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:19:36 -0700] "GET /DollSquidGame/ HTTP/1.1" 200 152
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:19:47 -0700] "GET /DollSquidGame/playerrecords.jsp HTTP/1.1" 200 2270
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:14:19:47 -0700] "GET /DollSquidGame/styles/default.css HTTP/1.1" 200 312

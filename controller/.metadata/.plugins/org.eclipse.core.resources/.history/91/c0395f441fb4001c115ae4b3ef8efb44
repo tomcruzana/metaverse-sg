@@ -1,0 +1,41 @@
+package com.hib;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import com.entity.User;
+import com.entity.UserAdmin;
+
+public class App {
+	public static void main(String[] args) {
+
+		// configures settings from hibernate.cfg.xml
+		StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+		SessionFactory sessionFactory;
+		try {
+
+			sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+			Session session = sessionFactory.openSession();
+			session.beginTransaction();
+
+			List<UserAdmin> result = session.createQuery("from User", UserAdmin.class).list();
+
+			result.forEach(u -> {
+				System.out.println(u.getId() + " " + u.getName());
+
+			});
+
+			session.getTransaction().commit();
+			session.close();
+		} catch (Exception e) {
+			// handle the exception
+			System.out.println(e);
+		}
+
+	}
+}

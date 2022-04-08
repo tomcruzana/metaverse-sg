@@ -1,0 +1,29 @@
+package com.sg.mv.dao;
+
+import org.hibernate.Session;
+
+import com.sg.mv.entity.AvatarPlayer;
+import com.sg.mv.entity.UserAdmin;
+import com.sg.mv.util.HibernateUtil;
+
+public class UserAdminDao {
+
+	public UserAdmin find(String username, String password) {
+		UserAdmin ua = null;
+		try {
+			Session session = HibernateUtil.getSessionFactory().openSession();
+			session.beginTransaction();
+
+			// there's only one user and it's id is 1
+			UserAdmin ua = session.get(UserAdmin.class, 1);
+			
+			session.getTransaction().commit();
+			session.close();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+		return 0;
+	}
+}
