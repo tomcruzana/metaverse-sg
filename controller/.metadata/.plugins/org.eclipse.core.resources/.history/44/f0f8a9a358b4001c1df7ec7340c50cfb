@@ -1,8 +1,0 @@
-package com.sg.mv.dao;
-
-public class UserAdminDao <T> {
-	
-	public T find(String username, String password) {
-		
-	}
-}

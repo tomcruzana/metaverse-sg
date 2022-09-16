@@ -1,5 +1,0 @@
-package com.sg.mv.dao;
-
-public class UserAdminDao <UserAdmin T> {
-	
-}

@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\tomcr\Desktop\projects\software-modules\hibernate-sandbox\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2951347233.index
-\DollSquidGame\src\main\java

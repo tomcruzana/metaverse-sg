@@ -1,5 +1,0 @@
-package com.sg.mv.util;
-
-public class HibernateUtil {
-
-}
